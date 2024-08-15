@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami - MediaFetch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #121212; /* Dark background color */
+            color: #e0e0e0; /* Light text color */
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #1c1c1c; /* Darker navbar background */
+        }
+        .navbar-brand, .nav-link {
+            color: #e0e0e0 !important;
+        }
+        .navbar-nav .nav-link.active {
+            color: #1db954 !important; /* Spotify green for active link */
+        }
+        .contact-container {
+            margin-top: 2rem;
+        }
+        .contact-header {
+            margin-bottom: 1.5rem;
+            animation: fadeIn 2s ease-out;
+        }
+        .contact-content {
+            margin-bottom: 2rem;
+            animation: fadeIn 2s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .contact-info {
+            background-color: #1c1c1c; /* Dark background for contact info */
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .contact-info h2 {
+            margin-bottom: 1rem;
+        }
+        .contact-info a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 1.25rem;
+        }
+        .contact-info a:hover {
+            color: #1db954; /* Spotify green on hover */
+        }
+        .contact-info .fa {
+            margin-right: 10px;
+        }
+        .footer {
+            background-color: #1c1c1c;
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">𝐌𝐞𝐝𝐢𝐚𝐅𝐞𝐭𝐜𝐡™</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tentang.html">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container contact-container">
+        <h1 class="text-center contact-header">Kontak Kami</h1>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="contact-info">
+                    <h2>Hubungi Kami</h2>
+                    <p>Anda dapat menghubungi kami melalui saluran berikut:</p>
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:info@mediafetch.com"><i class="fas fa-envelope"></i> info@mediafetch.com</a></li>
+                        <li><a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                        <li><a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 footer">
+        <p>2024 MediaFetch. Hak cipta dilindungi undang-undang.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

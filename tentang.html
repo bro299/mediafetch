@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang - MediaFetch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <style>
+        body {
+            background-color: #121212; /* Dark background color */
+            color: #e0e0e0; /* Light text color */
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #1c1c1c; /* Darker navbar background */
+        }
+        .navbar-brand, .nav-link {
+            color: #e0e0e0 !important;
+        }
+        .navbar-nav .nav-link.active {
+            color: #1db954 !important; /* Spotify green for active link */
+        }
+        .about-container {
+            margin-top: 2rem;
+        }
+        .about-header {
+            margin-bottom: 1.5rem;
+            animation: fadeIn 2s ease-out;
+        }
+        .about-content {
+            margin-bottom: 2rem;
+            animation: fadeIn 2s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .audio-player {
+            display: none; /* Hide the default audio controls */
+        }
+        .footer {
+            background-color: #1c1c1c;
+            color: #e0e0e0;
+        }
+        .footer p {
+            margin: 0;
+        }
+        /* General text hover effect */
+        h1, h2, p, li {
+            transition: color 0.3s ease;
+        }
+        h1:hover, h2:hover, p:hover, li:hover {
+            color: #1db954; /* Spotify green on hover */
+        }
+        a {
+            color: #e0e0e0; /* Default link color */
+            text-decoration: none; /* Remove underline */
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #1db954; /* Spotify green on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">𝐌𝐞𝐝𝐢𝐚𝐅𝐞𝐭𝐜𝐡™</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tentang.html">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Audio Player -->
+    <audio class="audio-player" autoplay>
+        <source src="your-audio-file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Main Content -->
+    <div class="container about-container">
+        <h1 class="text-center about-header">Tentang MediaFetch</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="about-content">
+                    <h2>Apa itu MediaFetch?</h2>
+                    <p>MediaFetch adalah platform inovatif yang memungkinkan pengguna untuk mengunduh media dari berbagai sumber sosial dengan mudah. Kami mengintegrasikan berbagai API untuk memudahkan proses pengunduhan video, musik, gambar, dan konten multimedia lainnya dari TikTok, Instagram, Facebook, YouTube, dan Twitter.</p>
+                </div>
+                <div class="about-content">
+                    <h2>Fitur Utama</h2>
+                    <ul>
+                        <li>Unduh video dan musik dari TikTok, Instagram, Facebook, dan YouTube.</li>
+                        <li>Unduh gambar atau slide foto dari TikTok dan Instagram.</li>
+                        <li>Opsi untuk men-download video dari Twitter.</li>
+                        <li>Antarmuka pengguna yang responsif dan mudah digunakan.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="about-content">
+                    <h2>Visi Kami</h2>
+                    <p>Kami bertujuan untuk memberikan solusi pengunduhan yang cepat, aman, dan efisien, dengan fokus pada pengalaman pengguna yang optimal. Kami terus memperbarui dan meningkatkan layanan kami untuk memenuhi kebutuhan pengguna kami.</p>
+                </div>
+                <div class="about-content">
+                    <h2>Kontak Kami</h2>
+                    <p>Jika Anda memiliki pertanyaan atau umpan balik tentang MediaFetch, jangan ragu untuk menghubungi kami di <a href="mailto:info@mediafetch.com">info@mediafetch.com</a>. Kami akan dengan senang hati membantu Anda!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 footer">
+        <p>2024 MediaFetch. Hak cipta dilindungi undang-undang.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
